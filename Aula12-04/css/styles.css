@@ -13,6 +13,10 @@
 }
 /* regra pra todos os .  */
 
+html{
+    scroll-behavior: smooth;
+}
+
 ul, ol {
     list-style: none;
 }
@@ -101,6 +105,30 @@ a:hover {
     background-color: transparent;
 }
 
+.btn:hover .arrow {
+    margin-left: 4px;
+    animation: arrow 1s ease-in-out infinite;
+}
+
+@keyframes arrow {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+
+
+
+/* fim hero */
+
+/* começo do cards */
+
 .cards {
     width: 90%;
     min-height: 100vh;
@@ -151,9 +179,35 @@ a:hover {
                 font-weight: 600;
                 text-wrap: balance;
             }
+            @media (width <= 1024px) {
+                width: 80%;
+            }
+            /* tem como função diminuir as colunas para adaptar em telas menores*/
+
 
         }
     }
 
 }
 
+.box {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-light);
+    font-size: 8vw;
+}
+
+.box1 {
+    background-color: #111;
+}
+
+.box2 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)),
+    url(../images/pexels-tobias-bj¢rkli-1693085.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}

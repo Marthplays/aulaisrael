@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    
     <link rel="stylesheet" href="./css/styles.css">
     <!-- Linkando a CSS -->
 
@@ -23,10 +25,10 @@
 
             <nav class="header-menu">
                 <ul>
-                    <li><a href="">Links</a></li>
-                    <li><a href="">Links</a></li>
-                    <li><a href="">Links</a></li>
-                    <li><a href="">Links</a></li>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#gastronomia">Gastronomia</a></li>
+                    <li><a href="#suites">Suítes</a></li>
+                    <li><a href="#reservas">Reservas</a></li>
                 </ul>
             </nav>
             <!-- nav.header-menu>ul>li*4>a{Link}  -->
@@ -37,13 +39,15 @@
         <section class="hero">
             <h2>O MyPlace é exatamente assim...</h2>
             <h3>Simplesmente maravilhoso</h3>
-            <a href="" class="btn">MAIS INFORMAÇÕES</a>
+            <a href="" class="btn">MAIS INFORMAÇÕES 
+                <i class="fa-solid fa-angle-down arrow"></i>
+            </a> 
         </section>
    <!-- atalho pro section -> a 
     section.hero>h2+h3+a  -->
 
     </div>
-    <section class ="cards">
+    <section class ="cards" id="tour">
         <h3>Faça um tour pelas montanhas</h3>
         
         <div class="cards-list">
@@ -106,13 +110,18 @@
                 <a href="" class="btn">Veja mais</a>
                  </div>
      
-<!-- Fim 2° card -->
-
-
         </div>
     </section>
 
-    <!-- Header e Hero da pagina -->
+    <section class="box box1" id="gastronomia">
+        <h3>GASTRONOMIA</h3>
+    </section>
+    <section class="box box2" id="suites">
+        <h3>SUÍTES</h3>
+    </section>
+    <section class="box box1" id="reservas">
+        <h3>RESERVAS</h3>
+    </section>
 
 </body>
 </html>
