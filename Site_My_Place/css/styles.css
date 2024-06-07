@@ -68,12 +68,6 @@ a:hover {
     gap: 20px; 
 }
 
-.logo-bg {
-    background-color: var(--color-pink);
-    padding: 3px;
-    border-radius: 7px;
-}
-
 .hero {
     width: 100%;
     height: calc(100vh - 100px); 
