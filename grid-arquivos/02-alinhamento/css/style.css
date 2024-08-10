@@ -33,6 +33,42 @@ h2 {
     min-height: 300px;
     width: 80%;
     border: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 70px);
+    column-gap: 2rem;
+    row-gap: 5rem;
+    gap: 2rem;
+
+/* alinhamento horizontal */
+/* justify-content: start;
+    justify-content: end;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly; */
+    justify-content: center;
+
+/* alinhamento vertical */
+/* align-content: start;
+    align-content: end; */
+    align-content: center;
+
+/* alinhamento de conteúdo horizontal */
+/* justify-items: stretch;
+    justify-items: start; 
+    justify-items: end;  */
+    justify-items: center;
+
+/* alinhamento de conteúdo vertical */
+/* align-items: stretch;
+    align-items: start;
+    align-items: end; */
+    align-items: center;
+}
+
+.alinhamento {
+    justify-self: start;
+    /* significa que é só para esse elemento */
 }
 
 .box1 {
