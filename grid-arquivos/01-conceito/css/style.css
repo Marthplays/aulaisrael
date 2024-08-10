@@ -15,6 +15,7 @@
 
 html {
     font-size: 62.5%;
+    /* fazer isso! */
 }
 
 body {
@@ -22,6 +23,8 @@ body {
     padding: 1rem;
     font-family: calibri;
     font-size: 1.6rem;
+    /* rem funciona de acordo com os pixeis do elemento pai, multiplicando-o (sendo o padrão 16 pixeis)
+    rem é "root em" */
 }
 
 h1 {
@@ -41,6 +44,56 @@ h2 {
     color: var(--bg-white);
 }
 
+.grid-container {
+    display: grid;   
+}
+
+.ex-1 {
+    grid-template-columns: 10rem 20rem 5rem 8rem;
+    /* tamanho das colunas sendo possivel misturar as medidas */
+}
+
+.ex-2 {
+    grid-template-columns: 10% 50% 100px 10rem;
+}
+
+.ex-3 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* fr significa fração de acordo com o elemento pai*/
+}
+
+.ex-4 {
+    grid-template-columns: repeat(4, 3fr);
+    /* define o número de colunas, e o tamanho das mesmas */
+}
+
+.ex-5 {
+    grid-template-columns: minmax(100px, 250px) 1fr 1fr 100px;
+    /* define o tamanho minimo e o tamanho maximo, é possivel o uso também com repeat(4,minmax(100px, 1fr)) */
+}
+
+.ex-6 {
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    /* é obrigatorio o uso de minmax e repeat, deve ser usado quando não sabemos o número de colunas, 
+    tentando colocar o máximo de colunas na mesma linha 
+    (PREENCHE) */
+}
+
+.ex-7 {
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    /* semelhante ao auto-fit, apenas não estica o elemento para que ocupe todo op espaço na linha 
+    (INSERE) */
+}
+
+    /* as propriedades de linha são iguais ao da coluna */
+
+.ex-8 {
+    grid-template-rows: 2rem 20rem 10rem 5rem;
+}
+
+.ex-9 {
+    grid-template-rows: 1fr 3fr 3fr 2fr;
+}
 .box1 {
     background-color: var(--first-color);
     min-height: 5rem;
