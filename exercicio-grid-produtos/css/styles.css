@@ -49,7 +49,6 @@ main {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(auto, 1fr));
-    
     gap: 1rem;
     padding: 2rem;
 }
@@ -109,4 +108,20 @@ footer {
 
 .span-col-2 {
     grid-column: span 2;
+}
+
+@media(width <= 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(auto, 1fr));
+    }
+
+    .span-col-2 {
+        grid-column: span 1;
+    }
+}
+
+@media(width <= 650px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
 }
