@@ -5,10 +5,10 @@
 }
 
 :root {
-    --color-light-700: #ffffff;
+    --color-light-700: #ffff;
     --color-light-500: #f9f9f9;
     --color-light-300: #cccccc;
-    --gradiente: linear-gradient(45deg,
+    --gradient: linear-gradient(45deg,
     hsl(240deg 19% 17%) 0%,
     hsl(284deg 16% 21%) 9%,
     hsl(326deg 17% 26%) 33%,
@@ -17,10 +17,15 @@
     hsl(21deg 22% 41%) 90%,
     hsl(35deg 20% 44%) 96%,
     hsl(55deg 15% 47%) 100%);
+
+    /* joshgradient */
 }
+
+    /* ao criar classes se usa o . (ponto), se for tag nao se usa! */
 
 html {
     font-size: 62.5%;
+    /* converter o rem em 10px */
 }
 
 body {
@@ -38,37 +43,70 @@ header {
 
 main {
     max-width: 132rem;
-    margin: auto;
+    margin: 2rem auto;
 }
 
-.product-grid{
+.product-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(auto,1fr));
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    
     gap: 1rem;
     padding: 2rem;
 }
-.product-item{
-    background-image: var(--gradiente);
+
+.product-item {
+    background-image: var(--gradient);
     color: var(--color-light-700);
-    display: flex;
+    border-radius: 5px;
     padding: 2rem 1rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-radius: 5px;
+    overflow: hidden;
 }
-.product-item img{
+
+/* formata as imagens no grid */
+.product-item img {
     max-width: 70%;
-    margin: 2rem 0;
+    margin: 1rem 0; 
+    /* 1rem é cima baixo, 0 é esquerda,direita */
+    transition: scale .5s;
 }
-.product-item div{
-       display: flex;
-       justify-content: space-evenly;
-       width: 100%;
+
+.product-item img:hover {
+    scale: 1.2;
+    cursor: pointer;
+    /* a maozinha do cursor */
+
 }
-.product-item div{
-       display: flex;
-       justify-content: space-evenly;
-       width: 100%;
+
+.product-item div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* vai se posicionar baseando no 100% do product-item */
+}
+
+.product-item p {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 3rem 0;
+    margin: 3rem;
+    background-color: var(--color-light-700);
+    border-top: 1px solid var(--color-light-300);
+}
+
+/* os dois abaixos representam a area de grid */
+.span-row-2 {
+    grid-row: span 2;
+}
+
+.span-col-2 {
+    grid-column: span 2;
 }
