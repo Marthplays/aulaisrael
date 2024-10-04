@@ -1,0 +1,66 @@
+:root {
+    --color-red-primary: #c4151c;
+    --color-grey-secundary: #263238;
+    --color-cream: #ece0d1;
+    --color-red-900: #84181c;
+    --color-red-950: #48070a;
+    --font-primary: 'Inter', sans-serif;
+
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+.btn-primary {background-color: var(--color-red-primary); border-color: var(--color-red-950);}
+.text-grey {color: var(--color-grey-secundary);}
+.bg-red-primary {background-color: var(--color-red-primary);}
+.bg-red-dark {background-color: var(--color-red-900);}
+.bg-cream {background-color: var(--color-cream);}
+.border-dark {border-color: var(--color-red-950) !important;}
+.bg-grey-secundary {
+    background-color: var(--color-grey-secundary); 
+    border-radius: 7px;
+}
+
+.dropdown-center {
+    left: 50% !important;
+    right: auto !important;
+    transform: translate(-50%, 0) !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-red-950);
+    color: var(--color-cream);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-red-950);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.hr-title {
+    max-width: 70%;
+    height: 4px;
+}
+
+.hr-filled {
+    width: 80%; 
+    background-color: var(--color-red-950); 
+    height: 10px; 
+    margin: 20px auto; 
+    border-radius: 20px;
+}
+
+.img-thumbnail {
+    background-color: var(--color-grey-secundary);
+}
+
+.carousel-indicators {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
