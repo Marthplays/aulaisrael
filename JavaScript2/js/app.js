@@ -87,5 +87,33 @@ document.querySelector("#btnPessoas").addEventListener("click", () => {
     document.querySelector("#arrayPessoas").textContent = arrayPessoas;
 })
 
+    //criando array pessoas
+const pessoas = ["Eu","Tu","Ele","Nós","Vós","Eles"];
+    //inserir no inicio
+    pessoas.unshift("QQ Pessoa");
+    
+    //excluir o primeiro valor do array
+    pessoas.shift();
+
+    //inserir no fim do array
+    pessoas.push("QQ pessoa");
+
+    //excluir o ultimo valor do array
+    pessoas.pop();
+
+    //inserir e excluir em qualquer posição do array
+    //excluindo
+    pessoas.splice(2,2);
+    //2,2 em que o primeiro dois é o indice inicial e a partir dele serão excluidos 2
+
+    //inserindo
+    pessoas.splice(2,0,"Ele","Nós");
+    //caso eu n queira excluir nada e só adicionar eu coloco 0 no segundo número
+
+    //juntando
+    pessoas.splice(3,2,"QQ Pessoa")
+
+
+document.querySelector("#arrayPessoas").textContent = pessoas;
 
 
