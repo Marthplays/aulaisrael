@@ -47,7 +47,9 @@ numero = Math.floor(Math.random() * 501)
 
 console.log(numero)
 
-if ()
+if (numero >= 100 && numero <= 300) {
+    console.log("O número está no intervalo!")
+}
 
 
 
