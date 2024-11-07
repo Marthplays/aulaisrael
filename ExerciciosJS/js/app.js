@@ -82,5 +82,44 @@ if (planeta.toLowerCase() == "urano") {
 
 alert(`A conversão é: ${pesoConvertido}`)
 */
+/*
+ex5
+let saldoMedio = prompt("Digite seu saldo médio para descobrir seu Crédito Especial:");
+
+if (saldoMedio <= 2000) {
+    alert("Você não possui Crédito Especial");
+} else if (saldoMedio > 2000 && saldoMedio < 10000) {
+    alert(`Seu saldo médio é: ${Math.round(saldoMedio * .2)}`);
+} else if (saldoMedio > 10000 && saldoMedio < 20000) {
+    alert(`Seu saldo médio é: ${Math.round(saldoMedio * .3)}`);
+} else {
+    alert(`Seu saldo médio é: ${Math.round(saldoMedio * .4)}`);
+}
+*/
+/*
+ex6
+let peso = prompt("Digite seu peso:");
+let altura = prompt("Digite sua altura:");
+let IMC = peso / altura * altura;
+
+if (IMC < 18.5) {
+    alert("Você está abaixo do peso!");
+} else if (IMC > 18.5 && IMC <= 25) {
+    alert("Você está no peso normal!");
+} else if (IMC > 25 && IMC <= 30) {
+    alert("Você está com sobrepeso");
+} else if (IMC > 30 && IMC <= 35) {
+    alert("Você está com obesidade leve");
+} else if (IMC > 35 && IMC <= 40) {
+    alert("Você está com obesidade moderada");
+} else if (IMC > 40) {
+    alert("Você está com obesidade mórbida");
+}
+*/
+let megaBytes = prompt("Digite quantos MegaBytes deseja converter em Bytes:");
+let bytes = megaBytes / 1000000;
+alert(bytes);
+
+
 
 
