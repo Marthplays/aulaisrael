@@ -116,10 +116,119 @@ if (IMC < 18.5) {
     alert("Você está com obesidade mórbida");
 }
 */
+/*
+ex7
 let megaBytes = prompt("Digite quantos MegaBytes deseja converter em Bytes:");
 let bytes = megaBytes / 1000000;
 alert(bytes);
+/*
+ex8
+let sim = 0;
+let nao = 0;
 
+let telefonou = prompt("Você telefonou para a vítima?");
+if (telefonou == "sim") {
+    sim++;
+} else {
+    nao++;
+}
 
+let esteve = prompt("Você esteve no local do crime?");
+if (esteve == "sim") {
+    sim++;
+} else {
+    nao++;
+}
 
+let mora = prompt("Você mora perto da vítima?");
+if (mora == "sim") {
+    sim++;
+} else {
+    nao++;
+}
 
+let devia = prompt("Você devia para a vítima?");    
+if (devia == "sim") {
+    sim++;
+} else {
+    nao++;
+}
+
+let trabalhou = prompt("Você trabalhou para a vítima?")
+if (trabalhou == "sim") {
+    sim++;
+} else {
+    nao++;
+}
+
+if (sim == 2) {
+    alert("Você é um suspeito!");
+} else if (sim == 3 || sim == 4) {
+    alert("Você é um cúmplice!");
+} else if (sim == 5) {
+    alert("Você é o assassino!");
+} else {
+    alert("Você é inocente");
+}
+*/
+/*
+ex9
+let somaNotas = 0;
+let notas = [];
+
+for (let index = 0; index < 4; index++) {
+    let nota = parseFloat(prompt("Digite sua nota:"));  
+    notas.push(nota); 
+    somaNotas += nota; 
+}
+
+let media = somaNotas / 4;
+
+if (media <= 10 && media >= 9) {
+    for (let i = 0; i < 4; i++) {
+        alert("Nota " + (i + 1) + ": " + notas[i]);
+    }
+    alert("A média foi " + media + ", e seu conceito foi A. Parabéns, você foi aprovado!");
+} else if (media < 9 && media > 7.5) {
+    for (let i = 0; i < 4; i++) {
+        alert("Nota " + (i + 1) + ": " + notas[i]);
+    }
+    alert("A média foi " + media + ", e seu conceito foi B. Parabéns, você foi aprovado!");
+} else if (media < 7.5 && media > 9) {
+    for (let i = 0; i < 4; i++) {
+        alert("Nota " + (i + 1) + ": " + notas[i]);
+    }
+    alert("A média foi " + media + ", e seu conceito foi C. Parabéns, você foi aprovado!");
+} else if (media < 6 && media > 4) {
+    for (let i = 0; i < 4; i++) {
+        alert("Nota " + (i + 1) + ": " + notas[i]);
+    }
+    alert("A média foi " + media + ", e seu conceito foi D. Infelizmente, você foi reprovado!");
+} else {
+    for (let i = 0; i < 4; i++) {
+        alert("Nota " + (i + 1) + ": " + notas[i]);
+    }
+    alert("A média foi " + media + ". Infelizmente, você foi reprovado!");
+}
+*/
+/*
+ex10
+let diaria = 360;
+let taxa = 0;
+let total = 0;
+
+let dias = parseInt(prompt("Digite quantos dias você ficou:"));
+
+if (dias > 15) {
+    taxa = dias * 35.5;
+    total = dias * diaria + taxa;
+} else if (dias == 15) {
+    taxa = dias * 46;
+    total = dias * diaria + taxa;
+} else {
+    taxa = dias * 58;
+    total = dias * diaria + taxa;
+}
+
+alert(`Você ficou ${dias} dias e terá que pagar R$ ${total} (taxa de serviço foi de R$ ${taxa})`)
+*/
