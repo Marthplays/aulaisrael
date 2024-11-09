@@ -232,3 +232,4 @@ if (dias > 15) {
 
 alert(`Você ficou ${dias} dias e terá que pagar R$ ${total} (taxa de serviço foi de R$ ${taxa})`)
 */
+ex
