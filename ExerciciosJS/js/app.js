@@ -304,7 +304,8 @@ alert(`Menor salário do grupo: ${formatarMoeda(menorSalario)} e o Maior salári
 alert(`Homems: ${contadorHomem} e Mulheres: ${contadorMulher}`);
 alert(`Média de idade do grupo: ${parseInt(mediaIdade)}`);
 */
-
+/*
+13
 let numero = prompt("Digite um número maior que zero para exibição dos quadrados");
 
 if (numero <= 0) {
@@ -320,3 +321,4 @@ for (let index = 0; index < numero; index++) {
 }
 
 console.log(numeros);
+*/
