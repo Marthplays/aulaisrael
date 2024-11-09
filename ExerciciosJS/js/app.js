@@ -232,4 +232,91 @@ if (dias > 15) {
 
 alert(`Você ficou ${dias} dias e terá que pagar R$ ${total} (taxa de serviço foi de R$ ${taxa})`)
 */
-ex
+/*
+ex11
+
+let intervalo = parseInt(prompt("Digite quantos números deseja ter nesse intervalo:"));
+let fi = prompt("Digite um inicio de intervalo Farenheit para converter em celsius:");
+let fs = prompt("Digite o fim do intervalo Farenheit para converter em celsius:");
+
+for (let index = 0; index < intervalo; index++) {
+    let c = (fi - 32) * 5/9;
+    alert(Math.round(c));
+    fi++;
+}*/
+/*
+ex12
+function formatarMoeda(valor) {
+    const valorFormatado = new Intl.NumberFormat ('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+    }).format(valor);
+    return valorFormatado;
+}
+
+let salarios = [300];
+let idades = [300];
+let sexo = [300];
+
+let contadorMulher = 0;
+let contadorHomem = 0;
+
+for (let index = 0; index < 300; index++) {
+    salarios[index] = Math.floor(Math.random() * 20000);
+    idades[index] = parseInt(Math.random() * 100);
+    sexo[index] = Math.floor(Math.random() * 2);
+    if (sexo[index] == 1) {
+        sexo[index] = "Mulher";
+        contadorMulher++;
+    } else {
+        sexo[index] = "Homem";
+        contadorHomem++;
+    }
+}
+
+let mediaSalarial = 0;
+salarios.forEach(salario => {
+    mediaSalarial += salario / salarios.length;
+});
+
+let maiorSalario = 0;
+let menorSalario = 0;
+
+salarios.forEach(salario => {
+    if (maiorSalario < salario) {
+        maiorSalario = salario;
+    }
+});
+
+salarios.forEach(salario => {
+    if (menorSalario > salario) {
+        menorSalario = salario;
+    }
+});
+
+let mediaIdade = 0;
+idades.forEach(idade => {
+    mediaIdade += idade / idades.length;
+});
+
+alert(`Média salarial do grupo: ${formatarMoeda(mediaSalarial)}`);
+alert(`Menor salário do grupo: ${formatarMoeda(menorSalario)} e o Maior salário do grupo ${formatarMoeda(maiorSalario)}`);
+alert(`Homems: ${contadorHomem} e Mulheres: ${contadorMulher}`);
+alert(`Média de idade do grupo: ${parseInt(mediaIdade)}`);
+*/
+
+let numero = prompt("Digite um número maior que zero para exibição dos quadrados");
+
+if (numero <= 0) {
+    alert("Digite um número válido!");
+}
+
+let cont = 0;
+let numeros = [numero];
+
+for (let index = 0; index < numero; index++) {
+    numeros[index] = cont * cont;
+    cont++;
+}
+
+console.log(numeros);
