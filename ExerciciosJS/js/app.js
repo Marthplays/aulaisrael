@@ -378,7 +378,8 @@ alert(`Números pares: ${par} e Números ímpar: ${impar}`);
 alert(`Números maiores que 500: ${maior500} e Números menores que 500: ${menor500}`);
 alert(`Números entre 300 e 700 são: ${entre300e700}`);
 */
-
+/*
+ex17
 let lancamentos =  new Array(10);
 let somatoria = 0;
 
@@ -393,3 +394,4 @@ for (let index = 0; index < lancamentos.length; index++) {
 
 alert(lancamentos);
 alert(somatoria);
+*/
