@@ -305,7 +305,7 @@ alert(`Homems: ${contadorHomem} e Mulheres: ${contadorMulher}`);
 alert(`Média de idade do grupo: ${parseInt(mediaIdade)}`);
 */
 /*
-13
+ex13
 let numero = prompt("Digite um número maior que zero para exibição dos quadrados");
 
 if (numero <= 0) {
@@ -322,3 +322,74 @@ for (let index = 0; index < numero; index++) {
 
 console.log(numeros);
 */
+/*
+ex14
+function soma() {
+    let somaTotal = 0;
+    for (let i = 0; i < 100; i++) {
+        somaTotal += i;
+        alert(`Número: ${i}, Somatória: ${somaTotal}`);
+    }
+} 
+
+soma();
+*/
+/*
+ex15
+let limite = prompt("Digite quantos números pares deseja visualizar:");
+let numero = 2;
+
+for (let index = 0; index < limite; index++) {
+    alert(`Números: ${numero}`);
+    numero += 2;
+}
+*/
+/*
+ex16
+let par = 0;
+let impar = 0;
+let maior500 = 0;
+let menor500 = 0;
+let entre300e700 = 0;
+
+let numeros = [];
+
+for (let index = 0; index < 200; index++) {
+    numeros[index] = parseInt(Math.random() * 1000);
+    
+    if (numeros[index] % 2 == 0) {
+        par++;
+    } else {
+        impar++;
+    }
+
+    if (numeros[index] > 500) {
+        maior500++;
+    } else {
+        menor500++;
+    }
+
+    if (numeros[index] >= 300 && numeros[index] <= 700) {
+        entre300e700++;
+    }
+}
+
+alert(`Números pares: ${par} e Números ímpar: ${impar}`);
+alert(`Números maiores que 500: ${maior500} e Números menores que 500: ${menor500}`);
+alert(`Números entre 300 e 700 são: ${entre300e700}`);
+*/
+
+let lancamentos =  new Array(10);
+let somatoria = 0;
+
+function gerarAleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+for (let index = 0; index < lancamentos.length; index++) {
+    lancamentos[index] = gerarAleatorio(1,6);
+    somatoria += lancamentos[index]; 
+}
+
+alert(lancamentos);
+alert(somatoria);
