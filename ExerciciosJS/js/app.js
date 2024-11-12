@@ -401,6 +401,8 @@ for (let index = 1; index < 10; index++) {
     alert(`${index}/${index+index}`);
 }
 */
+/*
+ex19
 function fibonacci(n) {
     let fib = [0, 1];  
 
@@ -413,7 +415,9 @@ function fibonacci(n) {
 let n = 20;
 let fibonacciSequence = fibonacci(n);
 alert(fibonacciSequence);
+*/
 /*
+ex20
 let numeroAleatorio = Math.floor(Math.random() * 10);
 let numeros = [];
 
@@ -426,4 +430,69 @@ for (let i = 0; i < 10; i++) {
 }
 
 console.log(`Número sorteado: ${numeroAleatorio}`);
-console.log(`10 números ímpares consecutivos: ${numeros}`);*/
+console.log(`10 números ímpares consecutivos: ${numeros}`);
+*/
+/*
+ex1
+let vetor = new Array(50);
+let quantidade3e7 = 0;
+let menor3 = 0;
+let par = 0;
+let impar = 0;
+
+for (let index = 0; index < vetor.length; index++) {
+    vetor[index] = Math.floor(Math.random() * 10);
+    if (vetor[index] > 3 && vetor[index] < 7) {
+        quantidade3e7++;
+    }
+
+    if (vetor[index] < 3) {
+        menor3++;
+    }
+
+    if (vetor[index] % 2 == 0) {
+        par++;
+    } else {
+        impar++;
+    }
+}
+
+alert(`
+    ${vetor}
+    A quantidade de números entre 3 e 7: ${quantidade3e7}
+    A quantidade de números menores que 3: ${menor3}
+    Quantidade números pares: ${par}
+    Quantidade números impares: ${impar}
+    `)
+
+*/
+/*
+ex1
+let vetor = new Array(5);
+let multiplo2 = [];
+let multiplo5 = [];
+let multiplo2e5 = [];
+
+for (let index = 0; index < vetor.length; index++) {
+    vetor[index] = Math.floor(Math.random() * 100);
+    if (vetor[index] % 2 == 0) {
+        multiplo2 = vetor[index];
+        multiplo2e5 = vetor[index];
+    }
+
+    if (vetor[index] % 5 == 0) {
+        multiplo5 = vetor[index];
+        multiplo2e5 = vetor[index];
+    }
+
+}
+
+alert(`Vetor de 5:
+    ${vetor}
+    Múltiplos de 2: 
+    ${multiplo2}
+    Múltiplos de 5: 
+    ${multiplo5}
+    Múltiplos de 2 e 5: 
+    ${multiplo2e5}`);
+*/
