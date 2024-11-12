@@ -395,3 +395,35 @@ for (let index = 0; index < lancamentos.length; index++) {
 alert(lancamentos);
 alert(somatoria);
 */
+/*
+ex18
+for (let index = 1; index < 10; index++) {
+    alert(`${index}/${index+index}`);
+}
+*/
+function fibonacci(n) {
+    let fib = [0, 1];  
+
+    for (let i = 2; i < n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2]; 
+    }
+    return fib;
+}
+
+let n = 20;
+let fibonacciSequence = fibonacci(n);
+alert(fibonacciSequence);
+/*
+let numeroAleatorio = Math.floor(Math.random() * 10);
+let numeros = [];
+
+if (numeroAleatorio % 2 === 0) {
+    numeroAleatorio += 1;
+}
+
+for (let i = 0; i < 10; i++) {
+    numeros[i] = numeroAleatorio + (i * 2);
+}
+
+console.log(`Número sorteado: ${numeroAleatorio}`);
+console.log(`10 números ímpares consecutivos: ${numeros}`);*/
