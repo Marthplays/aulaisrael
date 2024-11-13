@@ -467,7 +467,7 @@ alert(`
 
 */
 /*
-ex1
+ex2
 let vetor = new Array(5);
 let multiplo2 = [];
 let multiplo5 = [];
@@ -495,4 +495,57 @@ alert(`Vetor de 5:
     ${multiplo5}
     Múltiplos de 2 e 5: 
     ${multiplo2e5}`);
+*/
+/*
+ex3
+let array = new Array(30);
+let tres = 0;
+let somaMaiores5 = 0;
+
+for (let index = 0; index < array.length; index++) {
+    array[index] = Math.floor(Math.random() * 10);
+    if (array[index] == 3) {
+        tres++;
+    }
+
+    if (array[index] > 5) {
+        somaMaiores5 += array[index];
+    }
+}
+
+alert(`${array} 
+    Números de três encontrados:
+    ${tres}
+    Soma dos números maiores que 5:
+    ${somaMaiores5}
+    `);
+*/
+/*
+ex4
+let array = new Array(20);
+let maiorValor = -Infinity;
+let indexMaior = 0;
+let menorValor = Infinity;
+let indexMenor = 0;
+
+for (let index = 0; index < array.length; index++) {
+    array[index] = Math.floor(Math.random() * 100);
+    if (array[index] > maiorValor) {
+        maiorValor = array[index];
+        indexMaior = index + 1;
+    }
+    
+    if (array[index] < menorValor) {
+        menorValor = array[index];
+        indexMenor = index + 1;
+    }
+}
+
+alert(`
+    ${array}
+    O maior valor do vetor é:
+    ${maiorValor} na ${indexMaior} º posição
+    O menor valor do vetor é:
+    ${menorValor} na ${indexMenor} º posição
+    `)
 */
