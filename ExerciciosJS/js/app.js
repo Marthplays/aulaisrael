@@ -549,3 +549,67 @@ alert(`
     ${menorValor} na ${indexMenor} º posição
     `)
 */
+/*
+ex5
+let array = new Array(42);
+let array2 = new Array(42);
+let maiorValor = -Infinity;
+
+for (let index = 0; index < array.length; index++) {
+    array[index] = Math.floor(Math.random() * 10);
+    if (array[index] > maiorValor) {
+        maiorValor = array[index];
+    }
+}
+
+for (let index = 0; index < array.length; index++) {
+    array2[index] = array[index] * maiorValor;
+}
+
+alert(`
+    Vetor inalterado:
+    ${array}
+    Vetor alterado multiplicado por ${maiorValor}:
+    ${array2}
+    `);
+*/
+/*
+ex6
+let produtos = new Array(5);
+let precos = new Array(5);
+let inferior80 = 0;
+let entre120e160 = [];
+let soma = 0;
+let qnt = 0;
+
+for (let index = 0; index < produtos.length; index++) {
+    produtos[index] = prompt("Digite o nome do produto:");
+}
+
+for (let index = 0; index < precos.length; index++) {
+    precos[index] = Math.floor(Math.random() * 1000);
+
+    if (precos[index] < 80) {
+        inferior80++;
+    } else if (precos[index] < 120 && precos[index] > 160) {
+        entre120e160 = produtos[index];
+    } else if (precos[index] > 200) {
+        soma += parseInt(precos[index]); 
+        qnt++;
+    }
+};
+
+let media = 0;
+media = soma/qnt;
+
+console.log(`
+    ${produtos}
+    ${formatarMoeda(precos)}
+    A quantidade de produtos com preço inferior a R$ 80,00:
+    ${inferior80}
+    O nome dos produtos com preço entre R$ 120,00 e R$ 160,00:
+    ${entre120e160}
+    A média dos preços dos produtos com preço superior a R$ 200,00:
+    ${media}
+    `)
+*/
