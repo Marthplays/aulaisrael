@@ -613,3 +613,51 @@ console.log(`
     ${media}
     `)
 */
+/*
+ex 7
+let x = new Array(10);
+let y = new Array(10);
+let zDiferença = new Array(10);
+let zSoma = new Array(10);
+let zProduto = new Array(10);
+
+for (let index = 0; index < x.length; index++) {
+    x[index] = Math.floor(Math.random() * 100);
+    y[index] = Math.floor(Math.random() * 100);
+
+    zDiferença[index] = x[index] - y[index];
+    zSoma[index] = x[index] + y[index];
+    zProduto[index] = x[index] * y[index];
+}
+
+alert(`
+    A diferença entre X e Y:
+    ${zDiferença}
+    A soma entre X e Y:
+    ${zSoma}
+    O produto entre X e Y:
+    ${zProduto}
+    `);
+*/
+/*
+ex8
+let vetor = new Array(20);
+let vetorInverso = new Array(20);
+let aux = 19;
+
+for (let index = 0; index < vetor.length; index++) {
+    vetor[index] = Math.floor(Math.random() * 10);
+}
+
+for (let index = 0; index < vetor.length; index++) {
+    vetorInverso[index] = vetor[aux];
+    aux--
+}
+
+console.log(`
+    Vetor:
+    ${vetor}
+    Vetor inverso:
+    ${vetorInverso}
+    `)
+*/
