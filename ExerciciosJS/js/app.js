@@ -661,3 +661,65 @@ console.log(`
     ${vetorInverso}
     `)
 */
+/*
+ex9
+let codigo = Math.floor(Math.random() * 10);
+let vetor = new Array(50);
+let vetorInverso = new Array(50);
+let aux = 49;
+
+for (let index = 0; index < vetor.length; index++) {
+    vetor[index] = Math.floor(Math.random() * 10);
+}
+
+for (let index = 0; index < vetor.length; index++) {
+    vetorInverso[index] = vetor[aux];
+    aux--
+}
+
+if (codigo < 2 && codigo < 0) {
+    alert("Número inválido!")
+} else if (codigo == 1) {
+    alert(`
+        Vetor gerado:
+        ${vetor}
+        `)
+} else if (codigo == 2) {
+    alert(`
+        Vetor gerado:
+        ${vetor}
+        Vetor inverso:
+        ${vetorInverso}
+        `)
+}
+*/
+/*
+ex10
+let vetor = new Array(20);
+let numeros3 = 0;
+
+for (let index = 0; index < vetor.length; index++) {
+    vetor[index] = Math.floor(Math.random() * 10);
+
+    if (vetor[index] == 3) {
+        numeros3 = vetor[index];
+    }
+}
+
+alert(`
+    Vetor:
+    ${vetor}
+    `);
+
+for (let index = 0; index < vetor.length; index++) {
+    if (vetor[index] == 9) {
+        vetor[index] = -1;
+    }
+}
+
+alert(`
+    Vetor alterado:
+    ${vetor}
+    `);
+*/
+
