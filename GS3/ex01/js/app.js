@@ -4,12 +4,12 @@ document.querySelector('#dados').addEventListener('submit', function(e){
 
     e.preventDefault();
 
-    let consumo = document.querySelector('#consumo').value;
-    let potenciaPainel = document.querySelector('#potenciaPainel').value;
-    let irradiacaoSolar = document.querySelector('#irradiacaoSolar').value;
-    let eficienciaSistema = document.querySelector('#eficienciaSistema').value;
+    let consumo = Number(document.querySelector('#consumo').value);
+    let potenciaPainel = Number(document.querySelector('#potenciaPainel').value);
+    let irradiacaoSolar = Number(document.querySelector('#irradiacaoSolar').value);
+    let eficienciaSistema = Number(document.querySelector('#eficienciaSistema').value);
 
-    let numeroPlacas = (parseInt(consumo) / (parseFloat(potenciaPainel) * parseInt(irradiacaoSolar) * parseFloat(eficienciaSistema) * 30));
+    let numeroPlacas = ((consumo) / ((potenciaPainel) * (irradiacaoSolar) * (eficienciaSistema)) * 30) / 1000;
 
 
 
@@ -23,7 +23,7 @@ document.querySelector('#dados').addEventListener('submit', function(e){
             eficienciaSistema: eficienciaSistema,
             numeroPlacas: numeroPlacas
         }
-    ]
+    ];
 
     campos.forEach(campo => {
         tbody.innerHTML += `
@@ -32,7 +32,7 @@ document.querySelector('#dados').addEventListener('submit', function(e){
             <td>${campo.potenciaPainel}</td>
             <td>${campo.irradiacaoSolar}</td>
             <td>${campo.eficienciaSistema}</td>
-            <td>${Math.round(campo.numeroPlacas)}</td>
+            <td>${Math.ceil(campo.numeroPlacas)}</td>
         </tr>
         `
     });
